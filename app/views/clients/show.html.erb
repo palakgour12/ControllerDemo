@@ -1,0 +1,7 @@
+<% @client.each do |c| %>
+
+    <% if params[:status] == c.status %>
+    <h1>Name :<%=params[:status] %> <%= c.name%> </h1>
+    
+    <%end%>
+<%end%>

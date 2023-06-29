@@ -1,0 +1,16 @@
+<h1>LOGIN</h1>
+<%= flash[:success]%>
+
+<%= form_with model: @client,  url: "/login1" do |form|%>
+<div>
+  <%= form.label :name%><br>
+  <%= form.text_field :name%>
+</div>
+<div>
+  <%= form.label :Password%><br>
+  <%= form.text_field :password%>
+</div>
+<div>
+  <%= form.submit %>
+</div>
+<%end%>
